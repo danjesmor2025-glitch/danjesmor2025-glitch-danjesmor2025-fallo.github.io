@@ -1,0 +1,1224 @@
+/* =====================================================
+   ESTILOS GENERALES
+   SERVICIOS GENERALES JUANLUIS
+   CONSTRUCCIÓN Y CARPINTERÍA
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =====================================================
+   CUERPO
+   ===================================================== */
+
+body {
+    background: #f5f3ee;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   CABECERA
+   ===================================================== */
+
+.cabecera {
+    width: 100%;
+    min-height: 100px;
+
+    background: #111;
+
+    padding: 15px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 5px solid #d6a928;
+
+    position: relative;
+    z-index: 10;
+}
+
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.logo-area img {
+    width: 105px;
+    height: 105px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid #d6a928;
+
+    background: white;
+}
+
+
+.logo-area h1 {
+    color: white;
+
+    font-size: 32px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    line-height: 1.2;
+}
+
+
+.logo-area p {
+    color: #d6a928;
+
+    margin-top: 5px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   MENÚ
+   ===================================================== */
+
+.menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.menu a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.menu a:hover {
+    color: #d6a928;
+}
+
+
+/* =====================================================
+   BANNER PRINCIPAL
+   ===================================================== */
+
+.banner {
+
+    min-height: 550px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.72)
+        ),
+        url("../Imagenes/BANNER.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 80px;
+}
+
+
+.banner-texto {
+
+    max-width: 700px;
+
+    color: white;
+}
+
+
+.banner-texto h2 {
+
+    font-size: 52px;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+
+    color: #d6a928;
+
+    text-transform: uppercase;
+}
+
+
+.banner-texto p {
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+
+    color: #f5f5f5;
+}
+
+
+/* =====================================================
+   BOTONES
+   ===================================================== */
+
+.boton {
+
+    background: #d6a928;
+
+    color: #111;
+
+    text-decoration: none;
+
+    padding: 14px 30px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    transition: 0.3s;
+
+    border: 2px solid #d6a928;
+}
+
+
+.boton:hover {
+
+    background: #111;
+
+    color: #d6a928;
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   SECCIONES GENERALES
+   ===================================================== */
+
+.presentacion,
+.servicios,
+.proyectos,
+.contacto {
+
+    max-width: 1150px;
+
+    margin: 70px auto;
+
+    padding: 0 20px;
+
+    text-align: center;
+}
+
+
+.presentacion h2,
+.servicios h2,
+.proyectos h2,
+.contacto h2 {
+
+    font-size: 36px;
+
+    margin-bottom: 18px;
+
+    text-transform: uppercase;
+
+    color: #111;
+
+    position: relative;
+}
+
+
+.presentacion h2::after,
+.servicios h2::after,
+.proyectos h2::after,
+.contacto h2::after {
+
+    content: "";
+
+    display: block;
+
+    width: 70px;
+
+    height: 4px;
+
+    background: #d6a928;
+
+    margin: 12px auto 25px;
+}
+
+
+/* =====================================================
+   PRESENTACIÓN
+   ===================================================== */
+
+.presentacion {
+
+    background: white;
+
+    padding: 50px 40px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+}
+
+
+.presentacion p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+.presentacion strong {
+
+    color: #a77b00;
+}
+
+
+/* =====================================================
+   SUBTÍTULO
+   ===================================================== */
+
+.subtitulo {
+
+    font-size: 18px;
+
+    margin-bottom: 40px;
+
+    color: #666;
+}
+
+
+/* =====================================================
+   TARJETAS DE SERVICIOS
+   ===================================================== */
+
+.contenedor-servicios {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+.caja-servicios {
+
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
+
+    border-top: 5px solid #d6a928;
+}
+
+
+.caja-servicios:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+
+/* IMAGEN DE SERVICIO */
+
+.caja-servicios img {
+
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.3s;
+}
+
+
+.caja-servicios:hover img {
+
+    transform: scale(1.03);
+}
+
+
+/* TÍTULO */
+
+.caja-servicios h3 {
+
+    color: #111;
+
+    font-size: 22px;
+
+    margin: 20px 15px 10px;
+
+    line-height: 1.3;
+}
+
+
+/* DESCRIPCIÓN */
+
+.caja-servicios p {
+
+    padding: 0 20px;
+
+    line-height: 1.6;
+
+    color: #555;
+
+    min-height: 80px;
+}
+
+
+/* BOTÓN DE SERVICIO */
+
+.caja-servicios a {
+
+    display: inline-block;
+
+    margin: 20px;
+
+    padding: 10px 25px;
+
+    background: #111;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.caja-servicios a:hover {
+
+    background: #d6a928;
+
+    color: #111;
+}
+
+
+/* =====================================================
+   PROYECTOS
+   ===================================================== */
+
+.proyectos {
+
+    max-width: 1150px;
+}
+
+
+.contenedor-proyectos {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    margin-top: 35px;
+}
+
+
+.contenedor-proyectos article {
+
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
+}
+
+
+.contenedor-proyectos article:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+
+.contenedor-proyectos img {
+
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.contenedor-proyectos h3 {
+
+    font-size: 22px;
+
+    color: #111;
+
+    padding: 20px 15px 10px;
+}
+
+
+.contenedor-proyectos p {
+
+    padding: 0 20px 25px;
+
+    color: #555;
+}
+
+
+/* =====================================================
+   SECCIÓN DE CARACTERÍSTICAS
+   ===================================================== */
+
+/*
+   Esta sección utiliza:
+   
+   <div class="contenedor-servicios">
+       <div>...</div>
+       <div>...</div>
+   </div>
+*/
+
+.servicios .contenedor-servicios > div {
+
+    background: #111;
+
+    color: white;
+
+    padding: 30px 25px;
+
+    border-radius: 10px;
+
+    border-bottom: 5px solid #d6a928;
+
+    transition: 0.3s;
+}
+
+
+.servicios .contenedor-servicios > div:hover {
+
+    transform: translateY(-5px);
+
+    background: #1c1c1c;
+}
+
+
+.servicios .contenedor-servicios > div h3 {
+
+    color: #d6a928;
+
+    margin-bottom: 12px;
+
+    font-size: 21px;
+}
+
+
+.servicios .contenedor-servicios > div p {
+
+    line-height: 1.6;
+
+    color: #eee;
+}
+
+
+/* =====================================================
+   OFERTA / LLAMADO A LA ACCIÓN
+   ===================================================== */
+
+.oferta {
+
+    background:
+
+        linear-gradient(
+            rgba(0,0,0,0.85),
+            rgba(0,0,0,0.85)
+        ),
+
+        url("../Imagenes/BANNER.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+    padding: 70px 30px;
+
+    text-align: center;
+
+    margin-top: 70px;
+}
+
+
+.oferta h2 {
+
+    font-size: 38px;
+
+    color: #d6a928;
+
+    margin-bottom: 15px;
+}
+
+
+.oferta p {
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   CONTACTO
+   ===================================================== */
+
+.datos-contacto {
+
+    max-width: 700px;
+
+    width: 100%;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+
+    text-align: left;
+
+    border-left: 5px solid #d6a928;
+}
+
+
+.datos-contacto p {
+
+    margin: 18px 0;
+
+    font-size: 18px;
+
+    color: #444;
+}
+
+
+.datos-contacto strong {
+
+    color: #111;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+
+    width: 100%;
+
+    background: #111;
+
+    border-top: 5px solid #d6a928;
+
+    padding: 30px 50px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+/* LOGO DEL FOOTER */
+
+.logo-area2 img {
+
+    width: 110px;
+
+    height: 110px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid #d6a928;
+}
+
+
+/* REDES SOCIALES */
+
+.redes {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+
+.redes p {
+
+    width: 100%;
+
+    color: #d6a928;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    margin-bottom: 5px;
+}
+
+
+.redes img {
+
+    width: 50px;
+
+    height: 50px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    transition: 0.3s;
+}
+
+
+.redes img:hover {
+
+    transform: scale(1.15);
+}
+
+
+/* TEXTO DEL FOOTER */
+
+.texto {
+
+    color: white;
+
+    text-align: right;
+}
+
+
+.texto p {
+
+    margin: 5px 0;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+
+.texto p:first-child {
+
+    color: #d6a928;
+
+    font-size: 19px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 992px) {
+
+    /* CABECERA */
+
+    .cabecera {
+
+        flex-direction: column;
+
+        padding: 20px;
+
+        gap: 20px;
+
+        text-align: center;
+    }
+
+
+    .logo-area {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .logo-area h1 {
+
+        font-size: 28px;
+    }
+
+
+    .menu {
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 18px;
+    }
+
+
+    /* BANNER */
+
+    .banner {
+
+        padding: 60px 30px;
+
+        justify-content: center;
+
+        text-align: center;
+    }
+
+
+    .banner-texto {
+
+        max-width: 800px;
+    }
+
+
+    .banner-texto h2 {
+
+        font-size: 40px;
+    }
+
+
+    .banner-texto p {
+
+        font-size: 18px;
+    }
+
+
+    /* SERVICIOS */
+
+    .contenedor-servicios {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* PROYECTOS */
+
+    .contenedor-proyectos {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* FOOTER */
+
+    footer {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        text-align: center;
+
+        gap: 25px;
+
+        padding: 35px 20px;
+    }
+
+
+    .redes {
+
+        max-width: 400px;
+    }
+
+
+    .texto {
+
+        text-align: center;
+    }
+
+}
+
+
+/* =====================================================
+   CELULARES
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    /* LOGO */
+
+    .logo-area img {
+
+        width: 85px;
+
+        height: 85px;
+    }
+
+
+    .logo-area h1 {
+
+        font-size: 24px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .logo-area p {
+
+        font-size: 15px;
+    }
+
+
+    /* MENÚ */
+
+    .menu {
+
+        gap: 12px;
+    }
+
+
+    .menu a {
+
+        font-size: 15px;
+    }
+
+
+    /* BANNER */
+
+    .banner {
+
+        min-height: 500px;
+
+        padding: 35px 20px;
+    }
+
+
+    .banner-texto h2 {
+
+        font-size: 32px;
+    }
+
+
+    .banner-texto p {
+
+        font-size: 17px;
+
+        line-height: 1.6;
+    }
+
+
+    /* SECCIONES */
+
+    .presentacion,
+    .servicios,
+    .proyectos,
+    .contacto {
+
+        margin: 50px auto;
+
+        padding: 0 15px;
+    }
+
+
+    .presentacion {
+
+        padding: 35px 20px;
+    }
+
+
+    .presentacion h2,
+    .servicios h2,
+    .proyectos h2,
+    .contacto h2 {
+
+        font-size: 28px;
+    }
+
+
+    .presentacion p {
+
+        font-size: 16px;
+    }
+
+
+    /* SERVICIOS */
+
+    .contenedor-servicios {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+
+    .caja-servicios img {
+
+        height: 220px;
+    }
+
+
+    /* PROYECTOS */
+
+    .contenedor-proyectos {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+
+    /* OFERTA */
+
+    .oferta {
+
+        padding: 50px 20px;
+    }
+
+
+    .oferta h2 {
+
+        font-size: 29px;
+    }
+
+
+    .oferta p {
+
+        font-size: 17px;
+    }
+
+
+    /* CONTACTO */
+
+    .datos-contacto {
+
+        padding: 25px 20px;
+    }
+
+
+    .datos-contacto p {
+
+        font-size: 16px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        text-align: center;
+
+        gap: 20px;
+
+        padding: 30px 15px;
+    }
+
+
+    .logo-area2 img {
+
+        width: 90px;
+
+        height: 90px;
+    }
+
+
+    .redes {
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    .redes p {
+
+        font-size: 21px;
+    }
+
+
+    .redes img {
+
+        width: 45px;
+
+        height: 45px;
+    }
+
+
+    .texto {
+
+        text-align: center;
+    }
+
+
+    .texto p {
+
+        font-size: 14px;
+    }
+
+}
+
+
+/* =====================================================
+   CELULARES PEQUEÑOS
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+    .cabecera {
+
+        padding: 15px 10px;
+    }
+
+
+    .logo-area h1 {
+
+        font-size: 20px;
+    }
+
+
+    .logo-area p {
+
+        font-size: 14px;
+    }
+
+
+    .menu {
+
+        gap: 8px 12px;
+    }
+
+
+    .menu a {
+
+        font-size: 14px;
+    }
+
+
+    .banner {
+
+        min-height: 520px;
+
+        padding: 30px 15px;
+    }
+
+
+    .banner-texto h2 {
+
+        font-size: 27px;
+    }
+
+
+    .banner-texto p {
+
+        font-size: 16px;
+    }
+
+
+    .boton {
+
+        padding: 12px 22px;
+
+        font-size: 14px;
+    }
+
+
+    .caja-servicios h3 {
+
+        font-size: 20px;
+    }
+
+
+    .caja-servicios p {
+
+        font-size: 15px;
+    }
+
+
+    .oferta h2 {
+
+        font-size: 25px;
+    }
+
+
+    .oferta p {
+
+        font-size: 16px;
+    }
+
+}
